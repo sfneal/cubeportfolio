@@ -1,0 +1,26 @@
+language: node_js
+
+cache:
+  yarn: true
+  npm: true
+
+node_js:
+  - node
+
+install:
+  - yarn install
+
+script:
+  - yarn pack
+
+deploy:
+  provider: npm
+  email: stephen.neal14@gmail.com
+  api_key:
+    secure: ppyZypIq1Km9h2kJzfLNq/JYcQg3Xcuuw8+N7r5D+sdgfCFiDaqSAgyaTt7K+qlYu4xa3JOOFwY9I29NW7smA47Gigtnf3QgzZ1QoGN9zSu4eA40AJJfGZo6uhn8cK/F6lBUk2BL87/PnwCWza12Krwb4BQbFTqZT9EJV1p86Fhgn+7NYInAy8PaHT6rNrBBEcpHajhyuYeby0qmpTVJqWeP8XRr1go+26YnM3NjOZ6VDMFrgoDaR3uTWtSDPRyXTchTHKKeIIywZ/Us3SSPA6X5sLoPqKIzAIx6/luvIgdNtNzMQAhYh7ao1B/OS/3XgoVirOQjDSqtZ56f9IjKwPlQP9Y8y09P8fv7CLVJQrY+ZC/Z/jFglo7TZc6nGuRMKyPvKEWJKlQyOZ7HqDpq8vjn2NXRZd1t6dpxyS4Fo+TG8jWfenJASuUbiiLzRDXjELS7vGOZP9VGawreqGhiJxyYpVX4DzNf0dVLFwiaHGVxXXji3YzrG+gGlW6CclMaXDdUhORYO/hbS158D4y/5CkLjNhpqOksM8zR4ncdsdauCbKRbsRT94SyY6kAwwkgfiIaj5QlnL+zHKH77F2LLjRlcwM6mLZgwr0u2ICDsfyEG2Y4fl835gHLTW5kyc4P1SQncGmxNeBykEc0jx2OJWM6ZVojF/Wwg/VFd9J+/sw=
+  skip_existing: true
+  on:
+    tags: true
+    repo: sfneal/cubeportfolio
+    branch: dev
+  skip_cleanup: 'true'
