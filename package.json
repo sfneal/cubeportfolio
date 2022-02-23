@@ -1,0 +1,14 @@
+{
+  "name": "cubeportfolio",
+  "version": "1.0.0",
+  "description": "Cube portfolio jQuery plugin",
+  "repository": "https://github.com/sfneal/cubeportfolio.git",
+  "author": "sfneal <stephen.neal14@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "jquery": "^3.2"
+  }
+}
